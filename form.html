@@ -1,82 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/styleForm.css">
-    <link rel="sortcut icon" href="./img/checkpoint.png"/>
-    <title>Formulário Checkpoint</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/styleForm.css">
+  <link rel="sortcut icon" href="./img/checkpoint.png" />
+  <title>Formulário Checkpoint</title>
 </head>
 
 <body>
-<div class="checkpoint">
-    <img src='img/logo_checkpoint.png' id="logo"/>
+  <div class="checkpoint">
+    <img src='img/logo_checkpoint.png' id="logo" />
 
     <nav class="nav-checkpoint">
-		<a href="./index.html" class="btn">Home</a>
-		<a href="./form.html" class="btn">Formulário</a>
-		<a href="https://leonandes92.github.io/CheckPoint_FrontEnd_01" target="_blank" class="btn">Itaquera - SP</a>
-		<a href="https://arruday.github.io/Checkpoint1" target="_blank" class="btn">Santa Maria - RS</a>
-		<a href="https://watanaberafael.github.io/checkPoint_01_frontEnd" target="_blank" class="btn">São Miguel Arcanjo - SP</a>
-	</nav>
-        <section id="banner" style="background-image: url('img/background.png'); filter: contrast(1.2);">
+      <a href="./index.html" class="btn">Home</a>
+      <a href="./form.html" class="btn">Formulário</a>
+      <a href="https://leonandes92.github.io/CheckPoint_FrontEnd_01" target="_blank" class="btn">Itaquera - SP</a>
+      <a href="https://arruday.github.io/Checkpoint1" target="_blank" class="btn">Santa Maria - RS</a>
+      <a href="https://watanaberafael.github.io/checkPoint_01_frontEnd" target="_blank" class="btn">São Miguel Arcanjo -
+        SP</a>
+    </nav>
+    <section id="banner" style="background-image: url('img/background.png'); filter: contrast(1.2);">
 
 
-<form action="" method="post">
-    
-    <fieldset>
-      <legend>Cadastre-se e Escolha sua Viagem</legend>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" placeholder="nome" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="email" required>
-      
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" placeholder="xx xxxx xxxx" required>
+      <form action="" method="post">
 
-      <label for="dataNascimento">Data de Nascimento:</label>
-      <input type="date" id="dataNascimento" name="dataNascimento" required>
-      
-    </fieldset>
-    
-    <fieldset id="maioridade">
-    <label>Você tem mais de 18 anos?</label>
-    <div>
-    <input type="radio" id="sim" value="true" name="maioridade"><label for="maior" class="light">Sim</label>
-    </div>
-    <div>
-    <input type="radio" id="nao" value="false" name="minoridade"><label for="menor" class="light">Não</label>
-    </div>
+        <fieldset>
+          <legend>Cadastre-se e Escolha sua Viagem</legend>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="nome" required>
 
-    <fieldset>
-    <label for="job">Escolha o seu Itinerário:</label>
-    <select id="itinerario" name="itinerario">
-    <option valeu="">Escolha o seu Itinerário</option>
-      <optgroup label="">
-        <option value="itaquera">Itaquera - SP</option>
-        <option value="sao_miguel_arcanjo">São Miguel Arcanjo - SP</option>
-        <option value="santa_maria">Santa Maria - RS</option>
-      </optgroup>
-    </select>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="email" required>
 
-    </fieldset>
-    <button type="submit">Enviar</button>
-    <button type="reset">Resetar</button>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" placeholder="xx xxxx xxxx" required>
 
-  </form>
-</section>
-</div>
+          <label for="dataNascimento">Data de Nascimento:</label>
+          <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+        </fieldset>
+
+        <fieldset id="maioridade">
+          <label>Você tem mais de 18 anos?</label>
+          <div>
+            <input type="radio" id="sim" value="true" name="maioridade">
+            <label for="maior" class="light">Sim</label>
+          </div>
+          <div>
+            <input type="radio" id="nao" value="false" name="minoridade">
+            <label for="menor" class="light">Não</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="job">Escolha o seu Itinerário:</label>
+          <select id="itinerario" name="itinerario">
+            <option valeu="">Escolha o seu Itinerário</option>
+            <optgroup label="">
+              <option value="itaquera">Itaquera - SP</option>
+              <option value="sao_miguel_arcanjo">São Miguel Arcanjo - SP</option>
+              <option value="santa_maria">Santa Maria - RS</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+        <fieldset>
+
+          <input type="checkbox" name="turista" id="turista">
+          <label for="turista">Turista</label>
+
+          <input type="checkbox" name="residente" id="residente">
+          <label for="residente">Residente</label>
+
+          <input type="checkbox" name="estudante" id="estudante">
+          <label for="estudante">Estudante</label>
+          
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetar</button>
+
+      </form>
+    </section>
+  </div>
 </body>
 
 <footer>
-    <nav class="nav-footer">
-        <a class="">TURISMO GUIADO POR:</a>
-        <a href="https://github.com/arrudaY" target="_blank" class="btn">Felipe Arruda</a>
-        <a href="https://github.com/leonandes92" target="_blank" class="btn">Leonardo Fernandes</a>
-        <a href="https://github.com/watanaberafael" target="_blank" class="btn">Rafael Watanabe</a>
-    </nav>
+  <nav class="nav-footer">
+    <a class="">TURISMO GUIADO POR:</a>
+    <a href="https://github.com/arrudaY" target="_blank" class="btn">Felipe Arruda</a>
+    <a href="https://github.com/leonandes92" target="_blank" class="btn">Leonardo Fernandes</a>
+    <a href="https://github.com/watanaberafael" target="_blank" class="btn">Rafael Watanabe</a>
+  </nav>
 </footer>
+
 </html>

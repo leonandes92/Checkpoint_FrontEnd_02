@@ -26,15 +26,15 @@
 <form action="" method="post">
     
     <fieldset>
-      <legend>Dados Pessoais</legend>
+      <legend>Cadastre-se e Escolha sua Viagem</legend>
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
+      <input type="text" id="nome" placeholder="nome" required>
       
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="text" id="email" placeholder="email" required>
       
       <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="telefone" required>
+      <input type="tel" id="telefone" placeholder="xx xxxx xxxx" required>
 
       <label for="dataNascimento">Data de Nascimento:</label>
       <input type="date" id="dataNascimento" name="dataNascimento" required>
@@ -49,44 +49,22 @@
     <div>
     <input type="radio" id="nao" value="false" name="minoridade"><label for="menor" class="light">Não</label>
     </div>
-    </fieldset>
-      <legend>Your profile</legend>
-      <label for="bio">Biography:</label>
-      <textarea id="bio" name="user_bio"></textarea>
-    </fieldset>
+
     <fieldset>
-    <label for="job">Job Role:</label>
-    <select id="job" name="user_job">
-      <optgroup label="Web">
-        <option value="frontend_developer">Front-End Developer</option>
-        <option value="php_developor">PHP Developer</option>
-        <option value="python_developer">Python Developer</option>
-        <option value="rails_developer"> Rails Developer</option>
-        <option value="web_designer">Web Designer</option>
-        <option value="WordPress_developer">WordPress Developer</option>
-      </optgroup>
-      <optgroup label="Mobile">
-        <option value="Android_developer">Androild Developer</option>
-        <option value="iOS_developer">iOS Developer</option>
-        <option value="mobile_designer">Mobile Designer</option>
-      </optgroup>
-      <optgroup label="Business">
-        <option value="business_owner">Business Owner</option>
-        <option value="freelancer">Freelancer</option>
-      </optgroup>
-      <optgroup label="Other">
-        <option value="secretary">Secretary</option>
-        <option value="maintenance">Maintenance</option>
+    <label for="job">Escolha o seu Itinerário:</label>
+    <select id="itinerario" name="itinerario">
+    <option valeu="">Escolha o seu Itinerário</option>
+      <optgroup label="">
+        <option value="itaquera">Itaquera - SP</option>
+        <option value="sao_miguel_arcanjo">São Miguel Arcanjo - SP</option>
+        <option value="santa_maria">Santa Maria - RS</option>
       </optgroup>
     </select>
-    
-      <label>Interests:</label>
-      <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-      <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-    
+
     </fieldset>
-    <button type="submit">Sign Up</button>
+    <button type="submit">Enviar</button>
+    <button type="reset">Resetar</button>
+
   </form>
 </section>
 </div>

@@ -45,7 +45,8 @@
         </fieldset>
 
         <fieldset id="maioridade">
-          <label>Você tem mais de 18 anos?</label>
+          <legend>Você tem mais de 18 anos?</legend>
+          <input type="radio" name="" id="">
           <div>
             <input type="radio" id="sim" value="true" name="maioridade">
             <label for="maior" class="light">Sim</label>
@@ -57,18 +58,22 @@
         </fieldset>
 
         <fieldset>
-          <label for="job">Escolha o seu Itinerário:</label>
-          <select id="itinerario" name="itinerario">
-            <option valeu="">Escolha o seu Itinerário</option>
+          <legend>Escolha seu itinerário:</legend>
+
+          <select name="itinerario" id="itinerario">
+            <option value="" disabled selected>Selecione</option>
+
             <optgroup label="">
               <option value="itaquera">Itaquera - SP</option>
               <option value="sao_miguel_arcanjo">São Miguel Arcanjo - SP</option>
               <option value="santa_maria">Santa Maria - RS</option>
             </optgroup>
+
           </select>
         </fieldset>
 
         <fieldset>
+          <legend>Quais são seus pontos de interesse?</legend>
 
           <input type="checkbox" name="turista" id="turista">
           <label for="turista">Turista</label>
@@ -78,11 +83,11 @@
 
           <input type="checkbox" name="estudante" id="estudante">
           <label for="estudante">Estudante</label>
-          
+
         </fieldset>
 
         <button type="submit">Enviar</button>
-        <button type="reset">Resetar</button>
+        <button type="reset">Cancelar</button>
 
       </form>
     </section>

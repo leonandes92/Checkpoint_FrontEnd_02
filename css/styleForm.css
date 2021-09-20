@@ -48,6 +48,7 @@ select {
   input[type="radio"],
   input[type="checkbox"] {
     margin: 0 4px 8px 0;
+    display: inline-block;
   }
   
   select {

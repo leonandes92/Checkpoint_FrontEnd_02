@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+#banner{
+  background-image: url(../img/background.png);
+  filter: contrast(1.2);
+}
 
 body {
   color: white;
+  font-family:'Open Sans', sans-serif;
 }
 
 form {
@@ -19,7 +26,7 @@ h1 {
   text-align: center;
 }
 
-input:hover{
+input:hover, select:hover {
   animation: inputAnimation 1s;
 }
 
@@ -28,75 +35,63 @@ input:hover{
   to{transform:scale(1.05);}
 }
 
+input, select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea,
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  display: inline-block;
+}
+  
 select {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-  }
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.maioridade label, .interesses label{
+  display: inline-block;
+}
   
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin: 0 4px 8px 0;
-    display: inline-block;
-  }
   
-  select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-  }
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
   
-  button {
-    padding: 19px 39px 18px 39px;
-    color: black;
-    background-color:whitesmoke;
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    width: 100%;
-    border: 1px solid white;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-    margin-bottom: 10px;
-  }
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
   
-  fieldset {
-    margin-bottom: 30px;
-    border: none;
-  }
+label, select {
+  display: block;
+  margin-bottom: 8px;
+}
   
-  legend {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  label.light {
-    font-weight: 300;
-    display: inline;
-  }
+button {
+  padding: 19px 39px 18px 39px;
+  color: black;
+  background-color:whitesmoke;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid white;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}

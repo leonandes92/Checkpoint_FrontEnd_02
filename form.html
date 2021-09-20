@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -12,19 +12,23 @@
 </head>
 
 <body>
-  <div class="checkpoint">
-    <img src='img/logo_checkpoint.png' id="logo" />
+  <main>
 
-    <nav class="nav-checkpoint">
-      <a href="./index.html" class="btn">Home</a>
-      <a href="./form.html" class="btn">Formulário</a>
-      <a href="https://leonandes92.github.io/CheckPoint_FrontEnd_01" target="_blank" class="btn">Itaquera - SP</a>
-      <a href="https://arruday.github.io/Checkpoint1" target="_blank" class="btn">Santa Maria - RS</a>
-      <a href="https://watanaberafael.github.io/checkPoint_01_frontEnd" target="_blank" class="btn">São Miguel Arcanjo -
-        SP</a>
-    </nav>
-    <section id="banner" style="background-image: url('img/background.png'); filter: contrast(1.2);">
+    <div class="checkpoint">
+      <img src='img/logo_checkpoint.png' id="logo" />
 
+      <nav class="nav-checkpoint">
+        <a href="./index.html" class="btn">Home</a>
+        <a href="./form.html" class="btn">Formulário</a>
+        <a href="https://leonandes92.github.io/CheckPoint_FrontEnd_01" target="_blank" class="btn">Itaquera - SP</a>
+        <a href="https://arruday.github.io/Checkpoint1" target="_blank" class="btn">Santa Maria - RS</a>
+        <a href="https://watanaberafael.github.io/checkPoint_01_frontEnd" target="_blank" class="btn">São Miguel Arcanjo
+          -
+          SP</a>
+      </nav>
+    </div>
+
+    <section id="banner">
 
       <form action="" method="post">
 
@@ -46,15 +50,15 @@
 
         </fieldset>
 
-        <fieldset id="maioridade">
+        <fieldset>
           <legend>Você tem mais de 18 anos?</legend>
-          <div>
+          <div class="maioridade">
 
             <input type="radio" name="maioridade" id="sim" value="true">
-            <label for="sim" class="light">Sim</label>
+            <label for="sim">Sim</label>
 
             <input type="radio" name="maioridade" id="nao" value="false">
-            <label for="nao" class="light">Não</label>
+            <label for="nao">Não</label>
 
           </div>
         </fieldset>
@@ -77,15 +81,18 @@
 
         <fieldset>
           <legend>Quais são seus interesses?</legend>
+          <div class="interesses">
 
-          <input type="checkbox" name="turista" id="turista">
-          <label for="turista">Turista</label>
+            <input type="checkbox" name="turista" id="turista">
+            <label for="turista">Turista</label>
 
-          <input type="checkbox" name="residente" id="residente">
-          <label for="residente">Residente</label>
+            <input type="checkbox" name="residente" id="residente">
+            <label for="residente">Residente</label>
 
-          <input type="checkbox" name="estudante" id="estudante">
-          <label for="estudante">Estudante</label>
+            <input type="checkbox" name="estudante" id="estudante">
+            <label for="estudante">Estudante</label>
+
+          </div>
 
         </fieldset>
 
@@ -94,7 +101,7 @@
 
       </form>
     </section>
-  </div>
+  </main>
 </body>
 
 <footer>

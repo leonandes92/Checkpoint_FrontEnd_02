@@ -71,6 +71,12 @@ input:focus{
   color: white;
   background: rgb(103, 103, 150);
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgb(201, 201, 231)inset;
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
 label, select{
   display: block;
 }

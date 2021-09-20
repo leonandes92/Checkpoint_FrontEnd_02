@@ -13,27 +13,29 @@
 
 <body>
   <main>
+    <header>
+      <div class="checkpoint">
+        <img src='img/logo_checkpoint.png' id="logo" />
 
-    <div class="checkpoint">
-      <img src='img/logo_checkpoint.png' id="logo" />
-
-      <nav class="nav-checkpoint">
-        <a href="./index.html" class="btn">Home</a>
-        <a href="./form.html" class="btn">Formulário</a>
-        <a href="https://leonandes92.github.io/CheckPoint_FrontEnd_01" target="_blank" class="btn">Itaquera - SP</a>
-        <a href="https://arruday.github.io/Checkpoint1" target="_blank" class="btn">Santa Maria - RS</a>
-        <a href="https://watanaberafael.github.io/checkPoint_01_frontEnd" target="_blank" class="btn">São Miguel Arcanjo
-          -
-          SP</a>
-      </nav>
-    </div>
+        <nav class="nav-checkpoint">
+          <a href="./index.html" class="btn">Home</a>
+          <a href="./form.html" class="btn">Formulário</a>
+          <a href="https://leonandes92.github.io/CheckPoint_FrontEnd_01" target="_blank" class="btn">Itaquera - SP</a>
+          <a href="https://arruday.github.io/Checkpoint1" target="_blank" class="btn">Santa Maria - RS</a>
+          <a href="https://watanaberafael.github.io/checkPoint_01_frontEnd" target="_blank" class="btn">São Miguel
+            Arcanjo
+            -
+            SP</a>
+        </nav>
+      </div>
+    </header>
 
     <section id="banner">
+      
+      <form action="#" method="post">
 
-      <form action="" method="post">
-
-        <fieldset>
-          <legend>Cadastre-se e Escolha sua Viagem</legend>
+        <fieldset class="cadastro">
+          <legend>Cadastre-se e escolha seu destino</legend>
 
           <label for="nome">Nome: </label>
           <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" maxlength="100" required>
@@ -46,7 +48,7 @@
             title="Digite seu DDD + número. Use apenas números." maxlength="11" required>
 
           <label for="dataNascimento">Data de nascimento:</label>
-          <input type="date" id="dataNascimento" name="dataNascimento" required>
+          <input type="date" name="dataNascimento" id="dataNascimento" required>
 
         </fieldset>
 
@@ -96,8 +98,8 @@
 
         </fieldset>
 
-        <button type="submit">Enviar</button>
         <button type="reset">Cancelar</button>
+        <button type="submit" id="enviar">Enviar</button>
 
       </form>
     </section>

@@ -1,97 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 #banner{
   background-image: url(../img/background.png);
   filter: contrast(1.2);
 }
 
-body {
-  color: white;
-  font-family:'Open Sans', sans-serif;
-}
-
-form {
-  max-width: auto;
-  margin: 10px auto;
-  padding: 10px 20px;
-}
-
-h1 {
-  margin: 0 0 300px 0;
+main{
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+fieldset{
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: none;
+}
+
+input, select{
+  background: #e8eeef;
+  border: none;
+  font-size: 16px; 
+  padding: 12px;
+  border-radius: 10px;
+}
+.cadastro input, select{
+  width: 250px;
+}
+label{
+  margin: 10px auto 5px;
+}
+
+.maioridade label, .interesses label {
+  margin-bottom: 0;
+
+}
+
+.cadastro input{
+  cursor: text;
+}
+
+.maioridade input, .interesses input{
+  cursor: pointer;
 }
 
 input:hover, select:hover {
-  animation: inputAnimation 1s;
+  animation: inputAnimation 2s;
 }
 
 @keyframes inputAnimation{
   from{transform: scale(1);}
   to{transform:scale(1.05);}
 }
-
-input, select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
+.maioridade label, .interesses label {
   display: inline-block;
-}
-  
-select {
-  padding: 6px;
-  height: 32px;
-  border-radius: 2px;
+  margin-left: 2px;
+  margin-right: 10px;
 }
 
-.maioridade label, .interesses label{
-  display: inline-block;
-}
-  
-  
-fieldset {
-  margin-bottom: 30px;
-  border: none;
-}
-  
-legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-  
-label, select {
+label, select{
   display: block;
-  margin-bottom: 8px;
 }
-  
-button {
-  padding: 19px 39px 18px 39px;
-  color: black;
-  background-color:whitesmoke;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  width: 100%;
-  border: 1px solid white;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
+
+select{
+  margin: 10px auto 0;
+}
+
+button{
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px 10x;
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
+  background-color: rgb(73, 73, 196);
+  border: none;
+  cursor:pointer;
+}
+#enviar{
+  margin-left: 10px;
 }

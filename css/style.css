@@ -99,9 +99,3 @@ footer{
 a, p {
     color:gray;
 }
-
-@media(max-widht: 795px) {
-    .btn{
-        grid-template-columns: 3fr;
-    }
-}

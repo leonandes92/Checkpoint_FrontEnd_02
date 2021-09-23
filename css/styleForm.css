@@ -98,6 +98,22 @@ button{
   border: none;
   cursor:pointer;
 }
+
+button:hover{
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 30px 10x;
+  width: 120px;
+  height: 45px;
+  font-weight: bold;
+  background-color: rgb(35, 212, 189);
+  border: none;
+  cursor:pointer;
+  animation: inputAnimation 2s;
+}
+
 #enviar{
   margin-left: 10px;
 }
